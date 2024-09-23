@@ -1,0 +1,95 @@
+.kk-input {
+    display: flex;
+    height: 32px;
+    padding: 0px var(--Spacing-12, 12px);
+    align-items: center;
+    gap: var(--Spacing-8, 8px);
+    align-self: stretch;
+    border-radius: var(--Radius-Small, 8px);
+    border: 1px solid var(--Border-General-Primary, #E7E7ED);
+    background: var(--BG-General-White, #FFF);
+
+}
+
+.kk-input:focus {
+    border: 1px solid var(--Border-State-Default, #583EC9) !important;
+    background: var(--BG-General-White, #FFF);
+}
+
+.helper-text {
+    display: flex;
+    padding: var(--Spacing-4, 4px) 0px;
+    align-items: flex-start;
+    gap: var(--Spacing-4, 4px);
+    align-self: stretch;
+    color: var(--FG-State-Disabled, #ADACB9);
+
+    /* Poppins/Caption */
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 166.667% */
+}
+
+.kk-input.error {
+    /* color: var(--FG-Status-Error, #FF5252); */
+    border-radius: var(--Radius-Small, 8px);
+    border: 1px solid var(--Border-Status-Error, #FF5252) !important;
+    background: var(--BG-General-White, #FFF);
+    color: var(--FG-Status-Error, #FF5252);
+
+    /* Poppins/Caption */
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 166.667% */
+
+}
+
+.exclamation {
+    display: contents;
+    color: var(--FG-Status-Error, #FF5252);
+    width: 14px;
+    height: 14px;
+}
+
+.exclamation.span {
+    color: var(--FG-Status-Error, #FF5252);
+
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+    color: #a0a0a0;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    /* background-color: transparent;
+    border: 2px dashed #7a49ef;
+    border-radius: 50%; */
+}

@@ -1,27 +1,201 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+
+  --Spacing-32: 32px;
+  --Spacing-24: 24px;
+  --Spacing-8: 8px;
+  --Spacing-12: 12px;
+  --Radius-Large: 16px;
+  --FG-General-White: #FFF;
+  --FG-State-Default: #583EC9;
+  --FG-State-Hover: #3B288E;
+  --Radius-Small: 8px;
+  --BG-General-Royal-Purple: #583EC9;
+  --BG-State-Hover-1: #3B288E;
+  --BG-State-Pressed-1: #271A5E;
+  --BG-State-Disabled: #F1F1F4;
+  --FG-State-Disabled: #ADACB9;
+  --BG-General-White: #FFF;
+  --BG-State-Pressed-2: #DED9F4;
+  --FG-Status-Success: #0BB26C;
+  --Border-State-Default: #583EC9;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  :root {}
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
-@layer utilities {
+/* @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+.yy {
+  display: flex;
+  width: 480px;
+  padding: var(--Spacing-32, 32px);
+  flex-direction: column;
+  align-items: center;
+  gap: var(--Spacing-24, 24px);
+}
+
+.xx {
+  border-radius: var(--Radius-Large, 16px);
+  background: var(--FG-General-White, #FFF);
+
+  /* Shadow/Default */
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.08);
+}
+
+.btn {
+  /* Poppins/Button */
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 171.429% */
+
+  display: flex;
+  height: 36px;
+  min-width: 80px;
+  padding: 0px var(--Spacing-12, 12px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--Spacing-8, 8px);
+  border: none;
+  border-radius: var(--Radius-Small, 8px);
+}
+
+.btn.btn-primary {
+
+  background: var(--BG-General-Royal-Purple, #583EC9);
+}
+
+.btn.btn-primary:hover {
+  background: var(--BG-State-Hover-1, #3B288E);
+}
+
+.btn.btn-primary:active {
+  background: var(--BG-State-Pressed-1, #271A5E);
+}
+
+.btn.btn-primary:disabled {
+  background: var(--BG-State-Disabled, #F1F1F4);
+  color: var(--FG-State-Disabled, #ADACB9);
+}
+
+div.shadow {
+  border-radius: var(--Radius-Large, 16px);
+  background: var(--BG-General-White, #FFF);
+
+  /* Shadow/Default */
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.08);
+}
+
+.btn.btn-secondary {
+  color: var(--FG-State-Default, #583EC9);
+  background: var(--BG-General-White, #FFF);
+}
+
+.btn.btn-secondary:hover {
+  background: var(--BG-State-Hover-2, #F3F1FB);
+}
+
+.btn.btn-secondary:active {
+  background: var(--BG-State-Pressed-2, #DED9F4);
+  color: var(--FG-State-Hover, #3B288E);
+}
+
+.label {
+  color: var(--FG-General-Secondary, #68676F);
+
+  /* Poppins/Body 2 */
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 171.429% */
+}
+
+.label-mandatory {
+  color: var(--FG-Status-Error, #FF5252);
+
+  /* Poppins/Body 2 */
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 171.429% */
+}
+
+
+/* delete if not */
+.dialog-title {
+  color: var(--FG-General-Primary, #232225);
+
+  /* Poppins/Subtitile 1 */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  /* 150% */
+  justify-content: start !important;
+  align-items: start !important;
+
+}
+
+.xxxxxx {
+  display: flex;
+  width: 480px;
+  padding: var(--Spacing-32, 32px);
+  flex-direction: column;
+  gap: var(--Spacing-12, 12px);
+  border-radius: var(--Radius-Large, 16px);
+  background: var(--FG-General-White, #FFF);
+
+  /* Shadow/Default */
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.08);
+}
+
+.btn-grp {
+  width: 100%;
+  display: flex;
+  height: 36px;
+  padding: 0px var(--Spacing-12, 12px);
+  margin-top: 12px;
+  justify-content: end;
+  align-items: end;
+  gap: var(--Spacing-8, 8px);
+
+}
+
+.dialog-title>.bi.bi-check-circle {
+  display: inline;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  color: var(--FG-Status-Success, #0BB26C);
 }

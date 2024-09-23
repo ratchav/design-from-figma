@@ -1,0 +1,57 @@
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.check-icon {
+    color: #28a745;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 10px 0;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cancel-link {
+    margin-right: 15px;
+    color: #7a49ef;
+    text-decoration: none;
+}
+
+.action-button {
+    background-color: #7a49ef;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: #6238cc;
+}
